@@ -1,6 +1,6 @@
 ISO 11898-1:2015 协议详细定义了CAN网络报文的格式，包含了传统CAN与CANFD帧格式。CAN网络的帧类型共有4种，分别为数据帧、远程帧、错误帧、过载帧。本章将主要介绍CAN网络数据帧报文的格式，CAN网络中数据帧报文共有4种类型，分别为传统标准帧、传统扩展帧、CANFD标准帧、CANFD扩展帧，其数据帧报文的格式由如下字段域组成：
 
-![img](D:\software\typora\work\CAN\CAN CANFD format.assets\20190708180228298.png)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\20190708180228298-163420272507417.png)
 
 SOF：为帧的开头，该字段由一个显性位组成，当一个节点要往CAN总线上传输报文时，总线上的所有节点要同步该标志位当检测到SOF的上升边沿，这样就可以为后面的报文仲裁提供统一的时间参考。
 
@@ -88,41 +88,41 @@ res ：FD 帧的保留位。
 
 传统标准数据帧的格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-16342020996843)
 
  
 
 传统扩展数据帧的格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349590.png)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\20190708180349590.png)
 
  
 
 CAN FD标准数据帧（数据长度最大为16字节）格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-16342021222586)
 
  
 
 CAN FD标准数据帧（数据长度为20~64字节）格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349592.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-16342021259948)
 
 CAN FD扩展数据帧（最大字节长度为16）格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349597.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-163420212818610)
 
  
 
 CAN FD扩展数据帧（数据长度为20~64字节）格式如下所示：
 
-![img](https://img-blog.csdnimg.cn/20190708180349602.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-163420213014112)
 
  
 
 传统CAN报文与CANFD报文的DLC长度区别如下所示：
 
-![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70)
+![img](D:\software\typora\work\CAN\CAN CANFD format.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMjU2MjEy,size_16,color_FFFFFF,t_70-163420270733615)
 
  
 
