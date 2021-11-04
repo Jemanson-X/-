@@ -1,6 +1,7 @@
 ---
-typora-copy-images-to: ..\img
+
 typora-root-url: ..\img
+typora-copy-images-to: ..\img
 ---
 
 # 22. Enhanced Embedded Flash Controller (EEFC)
@@ -63,3 +64,4 @@ EEFC中断线已连接到中断控制器。使用EEFC中断需要先编写中断
 
 
 
+![image-20211104135043801](/image-20211104135043801.png)
