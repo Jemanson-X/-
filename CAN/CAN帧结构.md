@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ..\img
+---
+
 # 1 CAN 协议中的帧
 
 在了解CAN总线的通信机制之前，首先需要了解CAN协议中五种类型的帧结构：
