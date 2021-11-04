@@ -21,4 +21,3 @@
     151.101.184.133    avatars7.githubusercontent.com
     151.101.184.133    avatars8.githubusercontent.com
     # GitHub End
-加完后，再删除，也会生效，原因不明。
